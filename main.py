@@ -1,16 +1,51 @@
-# This is a sample Python script.
+# import threading
+# import time
+#
+# time1=time.time()
+#
+# def count(num: int):
+#     return print(num*2)
+#
+# for n in range(1,5):
+#     count(n)
+# print(time.time()-time1)
+#
+#
+#
+# import threading
+# import time
+#
+# time1=time.time()
+#
+# def count(num: int):
+#     return print(num*2)
+#
+# for n in range(1,5):
+#     thread=threading.Thread(target=count, args=(n, ))
+#     thread.start()
+#
+# print(time.time()-time1)
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# import multiprocessing
+# import time
+#
+# t1=time.time()
+#
+# def worker(num):
+#     return print(num*2)
+#
+# if __name__=='__main__':
+#     jobs=[]
+#     for i in range(1,5):
+#         p=multiprocessing.Process(target=worker, args=(i,))
+#         jobs.append(p)
+#         p.start()
+#
+# print(t1-time.time())
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# import logging
+# logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.DEBUG)
+# logging.debug('This message should go to the log file')
+# logging.info('So should this')
+# logging.warning('And this,too')
+# logging.error('And non-ASCII stuff, too, like resund and malmo')

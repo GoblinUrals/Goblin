@@ -10,3 +10,4 @@ for i in s[4:]:
     person['marks'].append(int(i)) # добавляем оценки с 4 индекса,i-строка>int
 print(s)
 print(person)
+

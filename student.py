@@ -10,15 +10,6 @@
 #     conn.commit()
 #
 #
-#
-# with open(r'C:/Users/Влад/Desktop/students.txt') as file:
-#     names=file.readlines()
-#     for name in names:
-#         _name=name.strip().split(' ')
-#         first_name=_name[0]
-#         second_name=_name[1]
-#         insert(first_name,second_name)
-#         print(first_name)
 
 
 import threading

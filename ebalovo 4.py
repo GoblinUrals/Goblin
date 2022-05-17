@@ -6,8 +6,8 @@
 # logging.warning('And this,too')
 # logging.error('And non-ASCII stuff, too, like result and malno')
 
+import requests
 
-
-import logging
-logging.warning('Watch out')
-logging.info('I told you so')
+url = 'http://api.forismatic.com/api/1.0/'
+payload  = {'method': 'getQuote', 'format': 'json', 'lang': 'ru'}
+res = requests.get(url, params=payload))

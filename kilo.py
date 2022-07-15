@@ -88,4 +88,5 @@ class LibraryReader(Person):
         else:
             raise ValueError(f'{self.fullname} не брал(а): {args.difference(self.books)}')
 
-x=LibraryReader('Струков', 80296096761, 108145, ('Дюма', 'Три', 'Мушкетера')).take_books('Струков', 80296096761, 108145, ('Дюма', 'Три', 'Мушкетера'))
+x=LibraryReader('Струков',80296096761,('108145')).take_books('Струков', 80296096761, ('108145'), ('Дюма', 'Три', 'Мушкетера'))
+print(x)
